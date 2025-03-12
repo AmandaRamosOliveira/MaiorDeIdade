@@ -9,12 +9,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o nome do aluno:");
         String nomeAluno  = scanner.nextLine();
-        System.out.print("Digite a idade do aluno:");
-        int idade = scanner.nextInt();
+        System.out.print("Digite a nota do aluno:");
+        int nota = scanner.nextInt();
 
-        VerificarIdade verificarIdade = new VerificarIdade(idade);
+        Verificar verificar = new Verificar(nota);
 
-        String resultadoFinal = verificarIdade.verificarIdade(idade);
+        String resultadoFinal = verificar.verificarNota(nota);
         System.out.println("Resultado: "+resultadoFinal);
 
         scanner.close();
