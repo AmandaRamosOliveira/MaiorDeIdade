@@ -4,7 +4,7 @@ public class VerificarIdade {
     private int idade;
     private String resultado;
 
-    public VerificarIdade(int nota){
+    public VerificarIdade(int idade){
         this.idade = idade;
     }
     public String verificarIdade(int idade){
